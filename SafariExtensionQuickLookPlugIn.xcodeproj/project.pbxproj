@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5FE53114EE6897004FA7DF /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5FE53014EE6897004FA7DF /* QuickLook.framework */; };
+		4C5FE53314EE6897004FA7DF /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5FE53214EE6897004FA7DF /* ApplicationServices.framework */; };
+		4C5FE53514EE6897004FA7DF /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5FE53414EE6897004FA7DF /* CoreServices.framework */; };
+		4C5FE53714EE6897004FA7DF /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5FE53614EE6897004FA7DF /* CoreFoundation.framework */; };
+		4C5FE53D14EE6897004FA7DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C5FE53B14EE6897004FA7DF /* InfoPlist.strings */; };
+		4C5FE53F14EE6897004FA7DF /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FE53E14EE6897004FA7DF /* GenerateThumbnailForURL.m */; };
+		4C5FE54114EE6897004FA7DF /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FE54014EE6897004FA7DF /* GeneratePreviewForURL.m */; };
+		4C5FE54314EE6897004FA7DF /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FE54214EE6897004FA7DF /* main.c */; };
+		4C5FE54E14EE7104004FA7DF /* SafariExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5FE54D14EE7104004FA7DF /* SafariExtension.m */; };
+		4C5FE55114EE8815004FA7DF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5FE55014EE8815004FA7DF /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4C5FE52D14EE6897004FA7DF /* SafariExtensionQuickLookPlugIn.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SafariExtensionQuickLookPlugIn.qlgenerator; path = SafariExtension.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5FE53014EE6897004FA7DF /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		4C5FE53214EE6897004FA7DF /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		4C5FE53414EE6897004FA7DF /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		4C5FE53614EE6897004FA7DF /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4C5FE53A14EE6897004FA7DF /* SafariExtensionQuickLookPlugIn-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SafariExtensionQuickLookPlugIn-Info.plist"; sourceTree = "<group>"; };
+		4C5FE53C14EE6897004FA7DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4C5FE53E14EE6897004FA7DF /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		4C5FE54014EE6897004FA7DF /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
+		4C5FE54214EE6897004FA7DF /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4C5FE54414EE6897004FA7DF /* SafariExtensionQuickLookPlugIn-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SafariExtensionQuickLookPlugIn-Prefix.pch"; sourceTree = "<group>"; };
+		4C5FE54D14EE7104004FA7DF /* SafariExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafariExtension.m; sourceTree = "<group>"; };
+		4C5FE55014EE8815004FA7DF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5FE52814EE6897004FA7DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5FE55114EE8815004FA7DF /* Cocoa.framework in Frameworks */,
+				4C5FE53114EE6897004FA7DF /* QuickLook.framework in Frameworks */,
+				4C5FE53314EE6897004FA7DF /* ApplicationServices.framework in Frameworks */,
+				4C5FE53514EE6897004FA7DF /* CoreServices.framework in Frameworks */,
+				4C5FE53714EE6897004FA7DF /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5FE52014EE6896004FA7DF = {
+			isa = PBXGroup;
+			children = (
+				4C5FE53814EE6897004FA7DF /* SafariExtensionQuickLookPlugIn */,
+				4C5FE52F14EE6897004FA7DF /* Frameworks */,
+				4C5FE52E14EE6897004FA7DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5FE52E14EE6897004FA7DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5FE52D14EE6897004FA7DF /* SafariExtensionQuickLookPlugIn.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5FE52F14EE6897004FA7DF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5FE55014EE8815004FA7DF /* Cocoa.framework */,
+				4C5FE53014EE6897004FA7DF /* QuickLook.framework */,
+				4C5FE53214EE6897004FA7DF /* ApplicationServices.framework */,
+				4C5FE53414EE6897004FA7DF /* CoreServices.framework */,
+				4C5FE53614EE6897004FA7DF /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4C5FE53814EE6897004FA7DF /* SafariExtensionQuickLookPlugIn */ = {
+			isa = PBXGroup;
+			children = (
+				4C5FE53E14EE6897004FA7DF /* GenerateThumbnailForURL.m */,
+				4C5FE54014EE6897004FA7DF /* GeneratePreviewForURL.m */,
+				4C5FE54D14EE7104004FA7DF /* SafariExtension.m */,
+				4C5FE54214EE6897004FA7DF /* main.c */,
+				4C5FE53914EE6897004FA7DF /* Supporting Files */,
+			);
+			path = SafariExtensionQuickLookPlugIn;
+			sourceTree = "<group>";
+		};
+		4C5FE53914EE6897004FA7DF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4C5FE53A14EE6897004FA7DF /* SafariExtensionQuickLookPlugIn-Info.plist */,
+				4C5FE53B14EE6897004FA7DF /* InfoPlist.strings */,
+				4C5FE54414EE6897004FA7DF /* SafariExtensionQuickLookPlugIn-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4C5FE52914EE6897004FA7DF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4C5FE52C14EE6897004FA7DF /* SafariExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5FE54714EE6897004FA7DF /* Build configuration list for PBXNativeTarget "SafariExtension" */;
+			buildPhases = (
+				4C5FE52714EE6897004FA7DF /* Sources */,
+				4C5FE52814EE6897004FA7DF /* Frameworks */,
+				4C5FE52914EE6897004FA7DF /* Headers */,
+				4C5FE52A14EE6897004FA7DF /* Resources */,
+				4C5FE52B14EE6897004FA7DF /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafariExtension;
+			productName = SafariExtensionQuickLookPlugIn;
+			productReference = 4C5FE52D14EE6897004FA7DF /* SafariExtensionQuickLookPlugIn.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C5FE52214EE6896004FA7DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = dot;
+			};
+			buildConfigurationList = 4C5FE52514EE6896004FA7DF /* Build configuration list for PBXProject "SafariExtensionQuickLookPlugIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C5FE52014EE6896004FA7DF;
+			productRefGroup = 4C5FE52E14EE6897004FA7DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5FE52C14EE6897004FA7DF /* SafariExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4C5FE52A14EE6897004FA7DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5FE53D14EE6897004FA7DF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		4C5FE52B14EE6897004FA7DF /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5FE52714EE6897004FA7DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5FE53F14EE6897004FA7DF /* GenerateThumbnailForURL.m in Sources */,
+				4C5FE54114EE6897004FA7DF /* GeneratePreviewForURL.m in Sources */,
+				4C5FE54314EE6897004FA7DF /* main.c in Sources */,
+				4C5FE54E14EE7104004FA7DF /* SafariExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4C5FE53B14EE6897004FA7DF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5FE53C14EE6897004FA7DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4C5FE54514EE6897004FA7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4C5FE54614EE6897004FA7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4C5FE54814EE6897004FA7DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SafariExtensionQuickLookPlugIn/SafariExtensionQuickLookPlugIn-Prefix.pch";
+				INFOPLIST_FILE = "SafariExtensionQuickLookPlugIn/SafariExtensionQuickLookPlugIn-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		4C5FE54914EE6897004FA7DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SafariExtensionQuickLookPlugIn/SafariExtensionQuickLookPlugIn-Prefix.pch";
+				INFOPLIST_FILE = "SafariExtensionQuickLookPlugIn/SafariExtensionQuickLookPlugIn-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5FE52514EE6896004FA7DF /* Build configuration list for PBXProject "SafariExtensionQuickLookPlugIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5FE54514EE6897004FA7DF /* Debug */,
+				4C5FE54614EE6897004FA7DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5FE54714EE6897004FA7DF /* Build configuration list for PBXNativeTarget "SafariExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5FE54814EE6897004FA7DF /* Debug */,
+				4C5FE54914EE6897004FA7DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C5FE52214EE6896004FA7DF /* Project object */;
+}
